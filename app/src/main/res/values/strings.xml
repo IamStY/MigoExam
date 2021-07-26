@@ -10,4 +10,7 @@
     <string name="active">Active</string>
     <string name="hourly_pass">HOUR PASS</string>
     <string name="input_format_error">Input Format Error</string>
+    <string name="wifi_failed_to_link"> WIFI Failed : request to Public API:</string>
+    <string name="cellular_linked"> WIFI Failed : request to Public API:</string>
+
 </resources>

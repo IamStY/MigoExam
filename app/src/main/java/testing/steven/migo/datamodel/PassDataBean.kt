@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import testing.steven.migo.androidTestImplementation.Converters
+import testing.steven.migo.database.Converters
 import java.util.*
 
 @Entity(tableName = "passes_table")

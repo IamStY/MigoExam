@@ -1,11 +1,11 @@
-package testing.steven.migo.androidTestImplementation
+package testing.steven.migo.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import testing.steven.migo.androidTestImplementation.dao.PassDao
+import testing.steven.migo.database.dao.PassDao
 import testing.steven.migo.datamodel.PassDataBean
 
 @TypeConverters(Converters::class)
@@ -20,16 +20,16 @@ abstract class AppDatabase : RoomDatabase() {
         private var INSTANCE: AppDatabase? = null
 
         fun getDatabase(
-                context: Context
+            context: Context
         ): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
-                        context.applicationContext,
-                        AppDatabase::class.java,
-                        "application_database"
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "application_database"
                 )
 
-                        .build()
+                    .build()
                 INSTANCE = instance
                 // return instance
                 instance

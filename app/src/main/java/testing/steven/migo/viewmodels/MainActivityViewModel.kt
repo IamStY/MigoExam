@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import testing.steven.migo.MigoUtilities
 import testing.steven.migo.R
-import testing.steven.migo.androidTestImplementation.dao.PassDao
+import testing.steven.migo.database.dao.PassDao
 import testing.steven.migo.datamodel.AdapterType
 import testing.steven.migo.datamodel.PassDataBean
 import testing.steven.migo.datamodel.PassDataUIModel
@@ -31,13 +31,13 @@ class MainActivityViewModel(context: Context, passDao: PassDao) : ViewModel() {
 
     private fun PassDataBean.adapt(): PassDataUIModel {
         return PassDataUIModel(
-                id = id,
-                name = name,
-                activeTime = activatedTime,
-                insertionTime = insertionTime,
-                expiredTime = expiredTime,
-                type = type,
-                adapterType = AdapterType.CONTENT
+            id = id,
+            name = name,
+            activeTime = activatedTime,
+            insertionTime = insertionTime,
+            expiredTime = expiredTime,
+            type = type,
+            adapterType = AdapterType.CONTENT
         )
     }
 
@@ -48,12 +48,12 @@ class MainActivityViewModel(context: Context, passDao: PassDao) : ViewModel() {
             context.getString(R.string.day_pass)
         }
         repository.insertPass(
-                PassDataBean(
-                        name = "$amount $unit",
-                        type = passType,
-                        count = amount,
-                        insertionTime = Calendar.getInstance().time
-                )
+            PassDataBean(
+                name = "$amount $unit",
+                type = passType,
+                count = amount,
+                insertionTime = Calendar.getInstance().time
+            )
         )
     }
 

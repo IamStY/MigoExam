@@ -6,16 +6,16 @@ import com.android.volley.NoConnectionError
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import testing.steven.migo.androidTestImplementation.dao.PassDao
 import testing.steven.migo.api.ApiRequestManager
+import testing.steven.migo.database.dao.PassDao
 import testing.steven.migo.datamodel.MigoResponse
 import testing.steven.migo.datamodel.PassDataBean
 import testing.steven.migo.datamodel.PassType
 import java.util.*
 
 class MigoRepository(
-    private val context: Context, private val vmScope: CoroutineScope,
-    private val passDao: PassDao
+        private val context: Context, private val vmScope: CoroutineScope,
+        private val passDao: PassDao
 ) {
     val passes = passDao.getCurrentPasses()
     val repoMigoResponse = MutableLiveData<String>()

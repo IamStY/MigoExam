@@ -1,4 +1,4 @@
-package testing.steven.migo.androidTestImplementation
+package testing.steven.migo.database
 
 import androidx.room.TypeConverter
 import testing.steven.migo.datamodel.PassType

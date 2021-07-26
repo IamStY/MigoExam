@@ -3,7 +3,7 @@ package testing.steven.migo.viewmodels
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import testing.steven.migo.androidTestImplementation.AppDatabase
+import testing.steven.migo.database.AppDatabase
 
 class ContextViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
     val passDao = AppDatabase.getDatabase(context.applicationContext).passDao()

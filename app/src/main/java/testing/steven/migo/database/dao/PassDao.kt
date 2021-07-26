@@ -1,4 +1,4 @@
-package testing.steven.migo.androidTestImplementation.dao
+package testing.steven.migo.database.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*

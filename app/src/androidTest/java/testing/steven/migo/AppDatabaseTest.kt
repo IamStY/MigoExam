@@ -15,8 +15,8 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import testing.steven.migo.androidTestImplementation.AppDatabase
-import testing.steven.migo.androidTestImplementation.dao.PassDao
+import testing.steven.migo.database.AppDatabase
+import testing.steven.migo.database.dao.PassDao
 import testing.steven.migo.datamodel.PassDataBean
 import testing.steven.migo.datamodel.PassType
 import java.io.IOException
