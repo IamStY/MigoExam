@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Migo</string>
+    <string name="active_format">Active Time : %s</string>
+    <string name="expired_format">Expired Time : %s</string>
+    <string name="insert_format">Insert Time : %s</string>
+    <string name="not_available">N/A</string>
+    <string name="not_active">Not Activated</string>
+    <string name="activated">Activated</string>
+    <string name="day_pass">DAY PASS</string>
+    <string name="active">Active</string>
+    <string name="hourly_pass">HOUR PASS</string>
+    <string name="input_format_error">Input Format Error</string>
+</resources>
